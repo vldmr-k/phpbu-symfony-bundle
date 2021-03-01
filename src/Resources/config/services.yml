@@ -1,0 +1,13 @@
+parameters:
+  phpbu.configuration: '%kernel.project_dir%/phpbu.xml'
+services:
+  phpbu.factory:
+    class: \phpbu\App\Factory
+  phpbu.runner:
+    class: \phpbu\App\Runner
+    arguments: ['@phpbu.factory']
+  phpbu.command.backup:
+    class: Vldmrk\PhpbuBundle\Command\BackupCommand
+    arguments: ['@phpbu.runner', '%phpbu.configuration%']
+    tags:
+      - console.command

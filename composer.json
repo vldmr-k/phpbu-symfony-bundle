@@ -1,0 +1,35 @@
+{
+  "name": "vldmrk/phpbu-symfony-bundle",
+  "version": "0.0.1",
+  "type": "symfony-bundle",
+  "description": "Symfony bundles integrade phpbu into the app",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.3",
+    "phpbu/phpbu": "~6"
+  },
+  "require-dev": {
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Vldmrk\\PhpbuBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vldmrk\\PhpbuBundle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test" : "./vendor/bin/simple-phpunit"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "5.0.*"
+    }
+  }
+}
