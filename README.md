@@ -3,7 +3,7 @@
 Install bundle into symfony project
 
 ```
-composer require vldmrk/phpbu-symfony
+composer require vldmrk/phpbu-symfony-bundle
 ```
 
 Add Bundle 
