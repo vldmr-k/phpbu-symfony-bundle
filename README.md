@@ -8,7 +8,7 @@ composer require vldmrk/phpbu-symfony
 
 Add Bundle 
 ```
-    Vldmrk\PhpbuBundle\PhpbuBundle::class => ['all' => true],
+Vldmrk\PhpbuBundle\PhpbuBundle::class => ['all' => true],
 ```
 
 Place configuration file ```phpbu.xml``` into the root of project `'%kernel.project_dir%/phpbu.xml'`
